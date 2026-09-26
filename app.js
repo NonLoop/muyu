@@ -8,13 +8,19 @@
       return null;
     }
   })();
-  const preferEn =
-    typeof navigator !== "undefined" &&
-    (navigator.language || "").toLowerCase().startsWith("en");
-  const initial =
-    fromQuery === "en" || fromQuery === "zh"
-      ? fromQuery
-      : stored || (preferEn ? "en" : "zh");
+  const supported = window.MuyuI18n.SUPPORTED || ["zh", "en", "ja", "ko"];
+  const navLang = (
+    (typeof navigator !== "undefined" && navigator.language) ||
+    ""
+  ).toLowerCase();
+  const fromBrowser = supported.find(
+    (code) => navLang === code || navLang.startsWith(code + "-")
+  );
+  const initial = supported.includes(fromQuery)
+    ? fromQuery
+    : supported.includes(stored)
+      ? stored
+      : fromBrowser || "zh";
 
   window.MuyuI18n.applyLang(initial);
 

@@ -7,6 +7,8 @@
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://yugakhan.github.io/muyu/" />
     <xhtml:link rel="alternate" hreflang="en" href="https://yugakhan.github.io/muyu/?lang=en" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://yugakhan.github.io/muyu/?lang=ja" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://yugakhan.github.io/muyu/?lang=ko" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://yugakhan.github.io/muyu/" />
   </url>
 </urlset>

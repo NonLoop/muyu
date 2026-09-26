@@ -11,11 +11,14 @@
   --deep: #0c1a15;
   --deep-2: #152820;
   /* Rounded gothic + geometric sans — never Song/serif */
-  --font-display: "Zen Maru Gothic", "Noto Sans SC", "PingFang SC", "Hiragino Sans GB",
-    "Microsoft YaHei", system-ui, sans-serif;
-  --font-body: "Noto Sans SC", "Manrope", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei",
-    system-ui, sans-serif;
+  --font-display: "Zen Maru Gothic", "Noto Sans SC", "Noto Sans JP", "Noto Sans KR",
+    "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", system-ui, sans-serif;
+  --font-body: "Noto Sans SC", "Noto Sans JP", "Noto Sans KR", "Manrope", "PingFang SC",
+    "Hiragino Sans GB", "Microsoft YaHei", system-ui, sans-serif;
   --font-en: "Manrope", "Noto Sans SC", system-ui, sans-serif;
+  --font-ja: "Zen Maru Gothic", "Noto Sans JP", "Hiragino Sans", "Yu Gothic", system-ui,
+    sans-serif;
+  --font-ko: "Noto Sans KR", "Apple SD Gothic Neo", "Malgun Gothic", system-ui, sans-serif;
 }
 
 *,
@@ -47,6 +50,24 @@ html[lang="en"] h1,
 html[lang="en"] h2,
 html[lang="en"] h3 {
   font-family: var(--font-en);
+}
+
+html[lang="ja"] body,
+html[lang="ja"] .brand-mark,
+html[lang="ja"] .brand-hero,
+html[lang="ja"] h1,
+html[lang="ja"] h2,
+html[lang="ja"] h3 {
+  font-family: var(--font-ja);
+}
+
+html[lang="ko"] body,
+html[lang="ko"] .brand-mark,
+html[lang="ko"] .brand-hero,
+html[lang="ko"] h1,
+html[lang="ko"] h2,
+html[lang="ko"] h3 {
+  font-family: var(--font-ko);
 }
 
 img {
@@ -184,16 +205,24 @@ a {
   background: transparent;
   color: rgba(255, 255, 255, 0.7);
   font-family: var(--font-body);
-  font-size: 0.78rem;
+  font-size: 0.72rem;
   font-weight: 500;
-  padding: 0.4rem 0.85rem;
+  padding: 0.38rem 0.55rem;
   cursor: pointer;
   transition: background 0.2s ease, color 0.2s ease;
+  white-space: nowrap;
 }
 
 .lang button.is-active {
   background: linear-gradient(135deg, var(--gold), #b8954a);
   color: var(--deep);
+}
+
+@media (min-width: 480px) {
+  .lang button {
+    font-size: 0.78rem;
+    padding: 0.4rem 0.75rem;
+  }
 }
 
 @media (min-width: 800px) {

@@ -1,8 +1,8 @@
 # WoodenFish Website
 
-禅意官网（中 / 英），对应 App：[WoodenFish - Electronic](https://apps.apple.com/us/app/woodenfish-electronic/id6450141503)
+禅意官网（中 / 英 / 日 / 韩），对应 App：[WoodenFish - Electronic](https://apps.apple.com/us/app/woodenfish-electronic/id6450141503)
 
-字体：Noto Sans SC + Zen Maru Gothic + Manrope（无衬线，不用宋体）。
+字体：Noto Sans SC/JP/KR + Zen Maru Gothic + Manrope（无衬线，不用宋体）。
 
 SEO：canonical / hreflang / Open Graph / Twitter Card / JSON-LD / robots.txt / sitemap.xml / webmanifest。
 

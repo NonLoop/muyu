@@ -88,11 +88,113 @@ const COPY = {
     doc_desc:
       "WoodenFish is a digital wooden fish app for tapping, merit counting, scripture music, meditation, and relaxing mini-games.",
   },
+  ja: {
+    brand: "新木魚",
+    brand_full: "新木魚 WoodenFish",
+    nav_practice: "修行",
+    nav_features: "機能",
+    nav_culture: "文化",
+    nav_download: "ダウンロード",
+    eyebrow_practice: "Practice",
+    eyebrow_features: "Features",
+    eyebrow_culture: "Culture",
+    hero_title: "一叩一念、心は静けさへ",
+    hero_lead:
+      "デジタル木魚。いつでも叩いて功徳を数え、お経と瞑想とともに、喧騒のなかに一寸の禅を。",
+    cta_ios: "App Store で入手",
+    cta_explore: "詳しく見る",
+    practice_title: "指先の木魚",
+    practice_lead: "画面を軽くタップすれば、澄んだ音。功徳は数えられ、心はあなたのもの。",
+    merit_label: "功徳",
+    alt_muyu_tap: "木魚のイラスト — タップで功徳+1",
+    features_title: "静心に必要なすべて",
+    features_lead:
+      "スキン、お経、瞑想、リラックスゲーム——禅のリズムでゆっくりと。",
+    f1_title: "叩きと功徳",
+    f1_body: "本物の音と触覚フィードバック。カスタム浮き文字とカウント。",
+    f2_title: "多彩な木魚スキン",
+    f2_body: "シンプルからレトロまで。見た目を変えて、修行に儀式感を。",
+    f3_title: "経文と背景",
+    f3_body: "仏号・読経・禅の音楽に、雰囲気のある背景。没入の静修。",
+    f4_title: "瞑想タイマー",
+    f4_body: "時間を設定し、呼吸と今に集中する。",
+    f5_title: "リラックスゲーム",
+    f5_body: "バブル、念珠、呼吸ガイドなど。軽く触れて心身をほぐす。",
+    f6_title: "木魚の文化",
+    f6_body: "由来・意味・よく使う仏号。叩きの先にある理解。",
+    culture_title: "木魚の音が、心を一瞬で覚ます",
+    culture_body:
+      "木魚は中空で、音は短く澄む。一打はマインドフルネスでありリズム——読経と静坐のあいだで、心を戻す助けに。",
+    download_title: "今、一叩から始めよう",
+    download_lead: "無料ダウンロード。いつでもどこでも修行とリラックス。",
+    download_note: "Health & Fitness · iPhone・iPad 対応",
+    foot_copy: "© yugakhan · 心身をひとつに",
+    doc_title: "新木魚 WoodenFish — 木魚を叩いて · 静心リラックス",
+    doc_desc:
+      "新木魚（WoodenFish）はデジタル木魚アプリ。功徳カウント、多彩なスキン、経文音楽、瞑想タイマー、リラックスゲームで、忙しい日常に静けさを。",
+  },
+  ko: {
+    brand: "신목어",
+    brand_full: "신목어 WoodenFish",
+    nav_practice: "수행",
+    nav_features: "기능",
+    nav_culture: "문화",
+    nav_download: "다운로드",
+    eyebrow_practice: "Practice",
+    eyebrow_features: "Features",
+    eyebrow_culture: "Culture",
+    hero_title: "한 번 두드림, 한 생각, 마음은 고요로",
+    hero_lead:
+      "디지털 목어. 언제든 두드려 공덕을 세고, 경전과 명상과 함께 소란 속에 한 뼘의 선정을.",
+    cta_ios: "App Store에서 다운로드",
+    cta_explore: "더 알아보기",
+    practice_title: "손끝의 목어",
+    practice_lead: "화면을 가볍게 터치하면 맑은 소리. 공덕은 세어지고, 마음은 당신 것.",
+    merit_label: "공덕",
+    alt_muyu_tap: "목어 일러스트 — 탭하면 공덕+1",
+    features_title: "고요한 마음에 필요한 모든 것",
+    features_lead:
+      "스킨, 경전 음악, 명상, 릴랙스 게임 — 선의 리듬으로 천천히.",
+    f1_title: "두드림과 공덕",
+    f1_body: "실제 사운드와 햅틱 피드백, 맞춤 떠오르는 글자와 카운트.",
+    f2_title: "다양한 목어 스킨",
+    f2_body: "미니멀부터 빈티지까지. 외관을 바꿔 수행에 의식을 더하세요.",
+    f3_title: "경전과 배경",
+    f3_body: "불호, 경독, 선 음악과 분위기 있는 배경으로 몰입 수행.",
+    f4_title: "명상 타이머",
+    f4_body: "시간을 정해 숨과 지금에 집중하세요.",
+    f5_title: "릴랙스 게임",
+    f5_body: "버블 터뜨리기, 염주, 호흡 가이드 등. 가볍게 터치해 몸과 마음을 풀어요.",
+    f6_title: "목어 문화",
+    f6_body: "유래, 의미, 자주 쓰는 불호 — 두드림 너머의 이해.",
+    culture_title: "목어 소리가 마음을 깨우는 순간",
+    culture_body:
+      "목어는 속이 비어 짧고 맑은 소리. 한 번의 두드림은 알아차림이자 리듬 — 독경과 좌선의 사이에서 마음을 되돌려 줍니다.",
+    download_title: "지금, 한 번의 두드림으로",
+    download_lead: "무료 다운로드. 언제 어디서나 수행과 휴식.",
+    download_note: "Health & Fitness · iPhone · iPad 지원",
+    foot_copy: "© yugakhan · 몸과 마음을 하나로",
+    doc_title: "신목어 WoodenFish — 목어 두드리기 · 고요한 휴식",
+    doc_desc:
+      "신목어(WoodenFish)는 디지털 목어 앱입니다. 공덕 카운트, 다양한 스킨, 경전 음악, 명상 타이머, 릴랙스 게임으로 바쁜 일상에서 고요를 되찾으세요.",
+  },
 };
 
+const LANG_META = {
+  zh: { html: "zh-Hans", og: "zh_CN" },
+  en: { html: "en", og: "en_US" },
+  ja: { html: "ja", og: "ja_JP" },
+  ko: { html: "ko", og: "ko_KR" },
+};
+
+const SUPPORTED = Object.keys(COPY);
+
 function applyLang(lang) {
-  const dict = COPY[lang] || COPY.zh;
-  document.documentElement.lang = lang === "en" ? "en" : "zh-Hans";
+  const resolved = SUPPORTED.includes(lang) ? lang : "zh";
+  const dict = COPY[resolved];
+  const meta = LANG_META[resolved];
+
+  document.documentElement.lang = meta.html;
   document.querySelectorAll("[data-i18n]").forEach((el) => {
     const key = el.getAttribute("data-i18n");
     if (dict[key] != null) el.textContent = dict[key];
@@ -102,7 +204,7 @@ function applyLang(lang) {
     if (dict[key] != null) el.setAttribute("alt", dict[key]);
   });
   document.querySelectorAll(".lang button").forEach((btn) => {
-    btn.classList.toggle("is-active", btn.dataset.lang === lang);
+    btn.classList.toggle("is-active", btn.dataset.lang === resolved);
   });
 
   document.title = dict.doc_title;
@@ -113,18 +215,18 @@ function applyLang(lang) {
   setMeta('meta[name="description"]', "content", dict.doc_desc);
   setMeta('meta[property="og:title"]', "content", dict.doc_title);
   setMeta('meta[property="og:description"]', "content", dict.doc_desc);
-  setMeta('meta[property="og:locale"]', "content", lang === "en" ? "en_US" : "zh_CN");
+  setMeta('meta[property="og:locale"]', "content", meta.og);
   setMeta('meta[name="twitter:title"]', "content", dict.doc_title);
   setMeta('meta[name="twitter:description"]', "content", dict.doc_desc);
 
   try {
-    localStorage.setItem("muyu_site_lang", lang);
+    localStorage.setItem("muyu_site_lang", resolved);
   } catch (_) {}
 
   const url = new URL(window.location.href);
-  if (lang === "en") url.searchParams.set("lang", "en");
-  else url.searchParams.delete("lang");
+  if (resolved === "zh") url.searchParams.delete("lang");
+  else url.searchParams.set("lang", resolved);
   window.history.replaceState({}, "", url);
 }
 
-window.MuyuI18n = { COPY, applyLang };
+window.MuyuI18n = { COPY, SUPPORTED, applyLang };
