@@ -1,0 +1,18 @@
+{
+  "name": "WoodenFish — 新木鱼",
+  "short_name": "WoodenFish",
+  "description": "Digital wooden fish for meditation, merit, and calm.",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#f3f7f4",
+  "theme_color": "#2D5A4A",
+  "lang": "zh-Hans",
+  "icons": [
+    {
+      "src": "assets/icon.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}
