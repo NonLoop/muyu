@@ -1,32 +1,53 @@
 (function () {
   const params = new URLSearchParams(window.location.search);
   const fromQuery = params.get("lang");
-  const stored = (() => {
+  const supported = window.MuyuI18n.SUPPORTED || ["zh", "en", "ja", "ko"];
+
+  const readStored = (key) => {
     try {
-      return localStorage.getItem("muyu_site_lang");
+      return localStorage.getItem(key);
     } catch (_) {
       return null;
     }
-  })();
-  const supported = window.MuyuI18n.SUPPORTED || ["zh", "en", "ja", "ko"];
-  const navLang = (
-    (typeof navigator !== "undefined" && navigator.language) ||
-    ""
-  ).toLowerCase();
-  const fromBrowser = supported.find(
-    (code) => navLang === code || navLang.startsWith(code + "-")
-  );
+  };
+
+  const detectSystemLang = () => {
+    const candidates = [];
+    if (typeof navigator !== "undefined") {
+      if (Array.isArray(navigator.languages)) {
+        candidates.push(...navigator.languages);
+      }
+      if (navigator.language) candidates.push(navigator.language);
+      if (navigator.userLanguage) candidates.push(navigator.userLanguage);
+    }
+
+    for (const raw of candidates) {
+      const tag = String(raw || "").toLowerCase().replace(/_/g, "-");
+      if (!tag) continue;
+      if (tag === "zh" || tag.startsWith("zh-")) return "zh";
+      if (tag === "ja" || tag.startsWith("ja-")) return "ja";
+      if (tag === "ko" || tag.startsWith("ko-")) return "ko";
+      if (tag === "en" || tag.startsWith("en-")) return "en";
+    }
+    return null;
+  };
+
+  const userPicked = readStored("muyu_site_lang_picked") === "1";
+  const stored = readStored("muyu_site_lang");
+  const fromSystem = detectSystemLang();
+
+  // URL > explicit user pick > system locale > Chinese
   const initial = supported.includes(fromQuery)
     ? fromQuery
-    : supported.includes(stored)
+    : userPicked && supported.includes(stored)
       ? stored
-      : fromBrowser || "zh";
+      : fromSystem || "zh";
 
-  window.MuyuI18n.applyLang(initial);
+  window.MuyuI18n.applyLang(initial, { persistPick: false });
 
   document.querySelectorAll(".lang button").forEach((btn) => {
     btn.addEventListener("click", () => {
-      window.MuyuI18n.applyLang(btn.dataset.lang);
+      window.MuyuI18n.applyLang(btn.dataset.lang, { persistPick: true });
     });
   });
 

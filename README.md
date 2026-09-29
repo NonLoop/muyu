@@ -6,6 +6,8 @@
 
 SEO：canonical / hreflang / Open Graph / Twitter Card / JSON-LD / robots.txt / sitemap.xml / webmanifest。
 
+隐私政策页面：`privacy.html`（页脚入口，支持中 / 英 / 日 / 韩）。
+
 ## 本地预览
 
 ```bash
